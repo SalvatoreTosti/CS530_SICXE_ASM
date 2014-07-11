@@ -1,0 +1,62 @@
+        **source_files/source4_riggins.asm**
+Line#   Address     Label       Opcode      Operand      Machine Code
+=====   =======     =====       ======      =======      ============
+    1   00000                                                        
+    2   00000                                                        
+    3   00000                                                        
+    4   00000                                                        
+    5   00000       prog        start       0                        
+    6   00000       bsrch       EQU         6000                     
+    7   00000       TEST        EQU         TEST1                    
+    8   00000       TEST1       EQU         TEST2                    
+    9   00000       TEST2       EQU         TEST3                    
+   10   00000       TEST3       EQU         $064                     
+   11   00000                                                        
+   12   00000       OFFB        EQU         8                        
+   13   00000                   BASE        delta                    
+   14   00000                   LDA         TEST        032061       
+   15   00003                   LDB         #delta      6923DC       
+   16   00006                   lds         #3          6D0003       
+   17   00009                   +ldx        @foo        06100FA6     
+   18   0000D                   +lda        beta,x      0390018A     
+   19   00011                   add         gamma       1B22A2       
+   20   00014                   ldx         @zeta       0623CE       
+   21   00017       first       NORM                    C8           
+   22   00018                   SVC         13          B00D         
+   23   0001A                   HIO                     F4           
+   24   0001B                   ldt         #alpha      752040       
+   25   0001E                   +ldt        #foo        75100FA6     
+   26   00022                   lda         @alpha      022039       
+   27   00025                   lda         foo         034BC4       
+   28   00028                   addr        S,T         9045         
+   29   0002A                   shiftr      T,2         A851         
+   30   0002C                   shiftl      S,1         A440         
+   31   0002E                   tixr        T           B850         
+   32   00030                   j           first       3F2FE4       
+   33   00033                   +j          first       3F100017     
+   34   00037                   Clear       T           B450         
+   35   00039                   +ldt        #50000      7510C350     
+   36   0003D                   ldx         #0          050000       
+   37   00040                   +jsub       bsrch       4B101770     
+   38   00044       addl        lda         alpha,x     03A017       
+   39   00047                   add         beta,x      1BA140       
+   40   0004A                   sta         gamma,x     0FA269       
+   41   0004D                   addr        s,t         9045         
+   42   0004F                   compr       x,t         A015         
+   43   00051                   +jlt        addl        3B100044     
+   44   00055                   jlt         addl        3B2FEC       
+   45   00058                   rsub                    4F0000       
+   46   0005B                                                        
+   47   0005B                                                        
+   48   0005B       TEST4       word        00001       000001       
+   49   0005E       alpha       resw        100                      
+   50   0018A       beta        RESW        100                      
+   51   002B6       gamma       resw        100                      
+   52   003E2       delta       WORD        20          000014       
+   53   003E5       zeta        BYTE        C'EOF'      454F46       
+   54   003E8       eta         byte        X'FFFFFE'   FFFFFE       
+   55   003EB       theta       byte        c'eof'      656F66       
+   56   003EE       buffer      RESB        3000                     
+   57   00FA6       foo         word        1           000001       
+   58   00FA9                   end         prog                     
+   59   00FA9                                                        

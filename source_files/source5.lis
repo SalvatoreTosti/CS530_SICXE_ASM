@@ -1,0 +1,29 @@
+        **source_files/source5.asm**
+Line#   Address     Label       Opcode      Operand      Machine Code
+=====   =======     =====       ======      =======      ============
+    1   00000                                                        
+    2   00000                   Start       $1000                    
+    3   01000       tst         LDa         ALPHA       03203A       
+    4   01003                   BASE        ALPHA                    
+    5   01003                   SVC         3           B003         
+    6   01005                   LDA         $500        030500       
+    7   01008                   lda         $100,x      038100       
+    8   0100B                   lDa         @1500       0205DC       
+    9   0100E                   LdA         #1000       0103E8       
+   10   01011                   +LDA        #50         01100032     
+   11   01015                   LDA         ALPHA       032025       
+   12   01018                   LDA         BETA        0348CA       
+   13   0101B                   +LDA        ALPHA       0310103D     
+   14   0101F                   LDA         ALPHA,X     03A01B       
+   15   01022                   LDA         BETA,X      03C8CA       
+   16   01025                   +LDA        ALPHA,x     0390103D     
+   17   01029                   LDA         @ALPHA      022011       
+   18   0102C                   LDA         @BETA       0248CA       
+   19   0102F                   +lDA        @ALPHA      0210103D     
+   20   01033                   LDA         #ALPHA      012007       
+   21   01036                   LDA         #BETA       0148CA       
+   22   01039                   +LDA        #ALPHA      0110103D     
+   23   0103D                                                        
+   24   0103D       ALPHA       Resw        750                      
+   25   01907       BETA        rESW        2                        
+   26   0190D                                                        

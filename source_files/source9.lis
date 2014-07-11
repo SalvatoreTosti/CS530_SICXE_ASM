@@ -1,0 +1,55 @@
+        **source_files/source9.asm**
+Line#   Address     Label       Opcode      Operand      Machine Code
+=====   =======     =====       ======      =======      ============
+    1   00000                                                        
+    2   00000                                                        
+    3   00000       prog        start       0                        
+    4   00000                   BASE        END                      
+    5   00000                   ADDR        A,X         9001         
+    6   00002                   COMPR       A,X         A001         
+    7   00004                   DIVR        A,X         9C01         
+    8   00006                   MULR        A,X         9801         
+    9   00008                   RMO         A,X         AC01         
+   10   0000A                   SHIFTL      A,1         A401         
+   11   0000C                   SHIFTR      A,1         A801         
+   12   0000E                   CLEAR       A           B400         
+   13   00010                   TIXR        A           B800         
+   14   00012                   SVC         3           B003         
+   15   00014                   FIX                     C4           
+   16   00015                   FLOAT                   C0           
+   17   00016                   HIO                     F4           
+   18   00017                   NORM                    C8           
+   19   00018                   SIO                     F0           
+   20   00019       END         TIO                     F8           
+   21   0001A                                                        
+   22   0001A                                                        
+   23   0001A                                                        
+   24   0001A                                                        
+   25   0001A                                                        
+   26   0001A                                                        
+   27   0001A                                                        
+   28   0001A                                                        
+   29   0001A                                                        
+   30   0001A                                                        
+   31   0001A                                                        
+   32   0001A                                                        
+   33   0001A                                                        
+   34   0001A                                                        
+   35   0001A                                                        
+   36   0001A                                                        
+   37   0001A                                                        
+   38   0001A                                                        
+   39   0001A                                                        
+   40   0001A                                                        
+   41   0001A                                                        
+   42   0001A                                                        
+   43   0001A                                                        
+   44   0001A                                                        
+   45   0001A                                                        
+   46   0001A                                                        
+   47   0001A                                                        
+   48   0001A       ALPHA       resw        100                      
+   49   00146       BETA        word        1           000001       
+   50   00149       DELTA       resw        50                       
+   51   001DF                   end         prog                     
+   52   001DF                                                        

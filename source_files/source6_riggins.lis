@@ -1,0 +1,57 @@
+        **source_files/source6_riggins.asm**
+Line#   Address     Label       Opcode      Operand      Machine Code
+=====   =======     =====       ======      =======      ============
+    1   00000                                                        
+    2   00000                                                        
+    3   00000                                                        
+    4   00000                                                        
+    5   00000       prog        start       0                        
+    6   00000       bsrch       EQU         14                       
+    7   00000       OFFB        EQU         8                        
+    8   00000                   BASE        delta                    
+    9   00000                   LDB         #delta      6923DF       
+   10   00003                   lds         #3          6D0003       
+   11   00006                   +ldx        @foo        06100FB3     
+   12   0000A                   +lda        beta,x      0390018A     
+   13   0000E                   add         gamma       1B22A5       
+   14   00011                   ldx         @zeta       0623D1       
+   15   00014       first       NORM                    C8           
+   16   00015                   SVC         13          B00D         
+   17   00017                   HIO                     F4           
+   18   00018                   ldt         #alpha      752043       
+   19   0001B                   +ldt        #foo        75100FB3     
+   20   0001F                   lda         @alpha      02203C       
+   21   00022                   lda         @foo        024BD1       
+   22   00025                   addr        S,T         9045         
+   23   00027                   shiftr      T,2         A851         
+   24   00029                   shiftl      S,1         A440         
+   25   0002B                   tixr        T           B850         
+   26   0002D                   j           first       3F2FE4       
+   27   00030                   +j          first       3F100014     
+   28   00034                   Clear       T           B450         
+   29   00036                   +ldt        #50000      7510C350     
+   30   0003A                   ldx         #0          050000       
+   31   0003D                   jsub        first       4B2FD4       
+   32   00040       addl        lda         alpha,x     03A01B       
+   33   00043                   add         beta,x      1BA144       
+   34   00046                   sta         gamma,x     0FA26D       
+   35   00049                   addr        s,t         9045         
+   36   0004B                   compr       x,t         A015         
+   37   0004D                   +jlt        addl        3B100040     
+   38   00051                   jlt         addl        3B2FEC       
+   39   00054                   rsub                    4F0000       
+   40   00057                                                        
+   41   00057                                                        
+   42   00057       test        byte        C'12345'    3132333435   
+   43   0005C       test2       byte        x'007b'     007b         
+   44   0005E       alpha       resw        100                      
+   45   0018A       beta        RESW        100                      
+   46   002B6       gamma       resw        100                      
+   47   003E2       delta       WORD        20          000014       
+   48   003E5       zeta        BYTE        C'EOF'      454F46       
+   49   003E8       eta         byte        X'FFFFFE'   FFFFFE       
+   50   003EB       theta       byte        c'Goodbye World!!!'476F6F6462796520576F726C64212121 
+   51   003FB       buffer      RESB        3000                     
+   52   00FB3       foo         word        1           000001       
+   53   00FB6                   end         prog                     
+   54   00FB6                                                        

@@ -1,0 +1,25 @@
+        **source_files/source6.asm**
+Line#   Address     Label       Opcode      Operand      Machine Code
+=====   =======     =====       ======      =======      ============
+    1   00000                                                        
+    2   00000                                                        
+    3   00000                                                        
+    4   00000       TEST        START       $1000                    
+    5   01000                   +LDB        #ALPHA      69101BD3     
+    6   01004                   BASE        ALPHA                    
+    7   01004                   LDA         FIRST       034003       
+    8   01007                   ADD         SECOND      1B4006       
+    9   0100A                   STA         THIRD       0F4009       
+   10   0100D                   ADDR        S,T         9045         
+   11   0100F       LOOP        COMP        LAST        2B400C       
+   12   01012                   ADD         FIRST       1B4003       
+   13   01015                   STA         LAST        0F400C       
+   14   01018                   JLT         LOOP        3B2006       
+   15   0101B       BUFFER      RESW        1000                     
+   16   01BD3       ALPHA       WORD        1           000001       
+   17   01BD6       FIRST       WORD        -5          fffffb       
+   18   01BD9       SECOND      WORD        10          00000a       
+   19   01BDC       THIRD       RESW        1                        
+   20   01BDF       LAST        RESW        1                        
+   21   01BE2                   END         TEST                     
+   22   01BE2                                                        

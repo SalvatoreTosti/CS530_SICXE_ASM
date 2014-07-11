@@ -1,0 +1,111 @@
+        **source_files/source8.asm**
+Line#   Address     Label       Opcode      Operand      Machine Code
+=====   =======     =====       ======      =======      ============
+    1   00000                                                        
+    2   00000                                                        
+    3   00000       prog        start       0                        
+    4   00000                   BASE        END                      
+    5   00000                   add         ALPHA       1B2137       
+    6   00003                   +add        BETA        1B100266     
+    7   00007                   addf        ALPHA       5B2130       
+    8   0000A                   +addf       BETA        5B100266     
+    9   0000E                   addr        A,X         9001         
+   10   00010                   and         ALPHA       432127       
+   11   00013                   +and        BETA        43100266     
+   12   00017                   clear       A           B400         
+   13   00019                   comp        ALPHA       2B211E       
+   14   0001C                   +comp       BETA        2B100266     
+   15   00020                   compf       ALPHA       8B2117       
+   16   00023                   +compf      BETA        8B100266     
+   17   00027                   div         ALPHA       272110       
+   18   0002A                   +div        BETA        27100266     
+   19   0002E                   divf        ALPHA       672109       
+   20   00031                   +divf       BETA        67100266     
+   21   00035                   divr        S,B         9C43         
+   22   00037                   fix                     C4           
+   23   00038                   float                   C0           
+   24   00039                   hio                     F4           
+   25   0003A                   j           ALPHA       3F20FD       
+   26   0003D                   +j          BETA        3F100266     
+   27   00041                   jeq         ALPHA       3320F6       
+   28   00044                   +jeq        BETA        33100266     
+   29   00048                   jgt         ALPHA       3720EF       
+   30   0004B                   +jgt        BETA        37100266     
+   31   0004F                   jlt         ALPHA       3B20E8       
+   32   00052                   +jlt        BETA        3B100266     
+   33   00056                   jsub        ALPHA       4B20E1       
+   34   00059                   +jsub       BETA        4B100266     
+   35   0005D                   lda         ALPHA       0320DA       
+   36   00060                   +lda        BETA        03100266     
+   37   00064                   ldb         ALPHA       6B20D3       
+   38   00067                   +ldb        BETA        6B100266     
+   39   0006B                   ldch        ALPHA       5320CC       
+   40   0006E                   +ldch       BETA        53100266     
+   41   00072                   ldf         ALPHA       7320C5       
+   42   00075                   +ldf        BETA        73100266     
+   43   00079                   ldl         ALPHA       0B20BE       
+   44   0007C                   +ldl        BETA        0B100266     
+   45   00080                   lds         ALPHA       6F20B7       
+   46   00083                   +lds        BETA        6F100266     
+   47   00087                   ldt         ALPHA       7720B0       
+   48   0008A                   +ldt        BETA        77100266     
+   49   0008E                   ldx         ALPHA       0720A9       
+   50   00091                   +ldx        BETA        07100266     
+   51   00095                   lps         ALPHA       D320A2       
+   52   00098                   +lps        BETA        D3100266     
+   53   0009C                   mul         ALPHA       23209B       
+   54   0009F                   +mul        BETA        23100266     
+   55   000A3                   mulf        ALPHA       632094       
+   56   000A6                   +mulf       BETA        63100266     
+   57   000AA                   mulr        A,X         9801         
+   58   000AC                   norm                    C8           
+   59   000AD                   or          ALPHA       47208A       
+   60   000B0                   +or         BETA        47100266     
+   61   000B4                   rd          ALPHA       DB2083       
+   62   000B7                   +rd         BETA        DB100266     
+   63   000BB                   rmo         A,X         AC01         
+   64   000BD                   rsub                    4F0000       
+   65   000C0                   shiftl      A,2         A4000002     
+   66   000C2                   shiftr      A,2         A8000002     
+   67   000C4                   sio                     F0           
+   68   000C5                   ssk         ALPHA       EF2072       
+   69   000C8                   +ssk        BETA        EF100266     
+   70   000CC                   sta         ALPHA       0F206B       
+   71   000CF                   +sta        BETA        0F100266     
+   72   000D3                   stb         ALPHA       7B2064       
+   73   000D6                   +stb        BETA        7B100266     
+   74   000DA                   stch        ALPHA       57205D       
+   75   000DD                   +stch       BETA        57100266     
+   76   000E1                   stf         ALPHA       832056       
+   77   000E4                   +stf        BETA        83100266     
+   78   000E8                   sti         ALPHA       D7204F       
+   79   000EB                   +sti        BETA        D7100266     
+   80   000EF                   stl         ALPHA       172048       
+   81   000F2                   +stl        BETA        17100266     
+   82   000F6                   sts         ALPHA       7F2041       
+   83   000F9                   +sts        BETA        7F100266     
+   84   000FD                   stsw        ALPHA       EB203A       
+   85   00100                   +stsw       BETA        EB100266     
+   86   00104                   stt         ALPHA       872033       
+   87   00107                   +stt        BETA        87100266     
+   88   0010B                   stx         ALPHA       13202C       
+   89   0010E                   +stx        BETA        13100266     
+   90   00112                   sub         ALPHA       1F2025       
+   91   00115                   +sub        BETA        1F100266     
+   92   00119                   subf        ALPHA       5F201E       
+   93   0011C                   +subf       BETA        5F100266     
+   94   00120                   subr        A,X         9401         
+   95   00122                   svc         4           B004         
+   96   00124                   td          ALPHA       E32013       
+   97   00127                   +td         BETA        E3100266     
+   98   0012B                   tio                     F8           
+   99   0012C                   tix         ALPHA       2F200B       
+  100   0012F                   +tix        BETA        2F100266     
+  101   00133                   wd          ALPHA       DF2004       
+  102   00136       END         +wd         BETA        DF100266     
+  103   0013A                                                        
+  104   0013A       ALPHA       resw        100                      
+  105   00266       BETA        word        1           000001       
+  106   00269       DELTA       resw        50                       
+  107   002FF                   end         prog                     
+  108   002FF                                                        

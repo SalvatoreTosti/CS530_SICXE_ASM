@@ -1,0 +1,60 @@
+        **source3.asm**
+Line#   Address     Label       Opcode      Operand     
+=====   =======     =====       ======      =======     
+    1   00000                                           
+    2   00000                                           
+    3   00000                                           
+    4   00000                                           
+    5   00000       prog        start       $1000       
+    6   01000       bsrch       EQU         14          
+    7   01000       OFFB        EQU         8           
+    8   01000                   BASE        delta       
+    9   01000                   LDB         #delta      
+   10   01003                   lds         #3          
+   11   01006                   +ldx        @foo        
+   12   0100A                   +lda        beta,x      
+   13   0100E                   add         gamma       
+   14   01011                   ldx         @zeta       
+   15   01014       first       NORM                    
+   16   01015                   SVC         13          
+   17   01017                   HIO                     
+   18   01018       King                                
+   19   01018                   ldt         #alpha      
+   20   0101B                   +ldt        #foo        
+   21   0101F                   lda         @alpha      
+   22   01022                   lda         @foo        
+   23   01025                   addr        S,T         
+   24   01027                   shiftr      T,2         
+   25   01029                   shiftl      S,1         
+   26   0102B                   tixr        T           
+   27   0102D                   j           first       
+   28   01030                   +j          first       
+   29   01034                   Clear       T           
+   30   01036                   +ldt        #50000      
+   31   0103A                   ldx         #0          
+   32   0103D                   jsub        first       
+   33   01040       addl        lda         alpha,x     
+   34   01043                   add         beta,x      
+   35   01046                   sta         gamma,x     
+   36   01049                   addr        s,t         
+   37   0104B                   compr       x,t         
+   38   0104D                   +jlt        addl        
+   39   01051                   jlt         addl        
+   40   01054                   rsub                    
+   41   01057                                           
+   42   01057                                           
+   43   01057                                           
+   44   01057                                           
+   45   01057       test        byte        C'Test program #1'
+   46   01066       test2       byte        x'007b'     
+   47   01068       alpha       resw        100         
+   48   01194       beta        RESW        100         
+   49   012C0       gamma       resw        100         
+   50   013EC       delta       WORD        20          
+   51   013EF       zeta        BYTE        C'EOF'      
+   52   013F2       eta         byte        X'FFFFFE'   
+   53   013F5       theta       byte        c'eof'      
+   54   013F8       buffer      RESB        3000        
+   55   01FB0       foo         word        1           
+   56   01FB3                   end         prog        
+   57   01FB3                                           

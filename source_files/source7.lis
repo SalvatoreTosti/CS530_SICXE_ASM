@@ -1,0 +1,41 @@
+        **source_files/source7.asm**
+Line#   Address     Label       Opcode      Operand      Machine Code
+=====   =======     =====       ======      =======      ============
+    1   00000                                                        
+    2   00000                                                        
+    3   00000       PROG        Start       0                        
+    4   00000       BSRCH       EQU         6000                     
+    5   00000       OFFB        EQU         8                        
+    6   00000                   BASE        DELTA                    
+    7   00000                   LDB         #DELTA      69211E       
+    8   00003                   LDS         #3          6D0003       
+    9   00006                   +LDX        @FOO        0610014D     
+   10   0000A                   +LDA        BETA,X      039000CD     
+   11   0000E                   ADD         GAMMA       1B20EC       
+   12   00011                   LDX         @ZETA       062110       
+   13   00014       FIRST       NORM                    C8           
+   14   00015                   +J          FIRST       3F100014     
+   15   00019                   CLEAR       T           B450         
+   16   0001B                   +LDT        #50000      7510C350     
+   17   0001F                   LDX         #0          050000       
+   18   00022                   +JSUB       BSRCH       4B101770     
+   19   00026       ADDL        LDA         ALPHA,X     03A014       
+   20   00029                   ADD         BETA,X      1BA0A1       
+   21   0002C                   STA         GAMMA,X     0FA0CE       
+   22   0002F                   ADDR        S,T         9045         
+   23   00031                   COMPR       X,T         A015         
+   24   00033                   +JLT        ADDL        3B100026     
+   25   00037                   JLT         ADDL        3B200E       
+   26   0003A                   RSUB                    4F0000       
+   27   0003D                                                        
+   28   0003D       ALPHA       RESW        48                       
+   29   000CD       BETA        RESW        16                       
+   30   000FD       GAMMA       RESW        12                       
+   31   00121       DELTA       WORD        20          000014       
+   32   00124       ZETA        BYTE        C'EOF'      454F46       
+   33   00127       ETA         BYTE        X'FFFFFE'   FFFFFE       
+   34   0012A       THETA       BYTE        c'eof'      656F66       
+   35   0012D       BUFFER      RESB        32                       
+   36   0014D       FOO         WORD        1           000001       
+   37   00150                   END         PROG                     
+   38   00150                                                        

@@ -1,0 +1,31 @@
+        **source1.asm**
+Line#   Address     Label       Opcode      Operand                  Machine Code
+=====   =======     =====       ======      =======                  ============           
+    1   00000                                                                    
+    2   00000                                                                    
+    3   00000                                                                    
+    4   00000                                                                    
+    5   00000                                                                    
+    6   00000       prog        start       $1000                                
+    7   01000                   lds         #3                      6D3          
+    8   01003                   ldt         #300                    75300        
+    9   01006                   ldx         #0                      050          
+   10   01009                   lda         #alpha                  01           
+   11   0100C                   lda         @alpha                  02160        
+   12   0100F                   lda         alpha                   0315D        
+   13   01012       addlf       lda         alpha,x                 0315A        
+   14   01015                   add         beta,x                  1B283        
+   15   01018                   sta         gamma,x                 0F3AC        
+   16   0101B                   byte        C' 33  .fjdklas yep'                 
+   17   0102C                   addr        s,x                     941          
+   18   0102E                   compr       x,t                     A15          
+   19   01030                   jlt         addlf                   3BFDF        
+   20   01033                                                                    
+   21   01033                                                                    
+   22   01033       delta       resb        $10                                  
+   23   01043       alpha       resw        100                                  
+   24   0116F       beta        resw        100                                  
+   25   0129B       gamma       resw        100                                  
+   26   013C7                   end         prog                                 
+   27   013C7                                                                    
+   28   013C7                                                                    
